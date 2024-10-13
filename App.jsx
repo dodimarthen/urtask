@@ -1,12 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Header from "./src/Components/Header";
+import UserGreeting from "./src/Component/Header";
 
 export default function App() {
   return (
-    <SafeAreaView className="flex-1">
-      <View className="bg-[#0F0F0F] flex-1 justify-center items-center"></View>
+    <SafeAreaView className="flex-1 bg-[#F5F7F8]">
+      <View className="flex-1">
+        <UserGreeting />
+      </View>
+      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
